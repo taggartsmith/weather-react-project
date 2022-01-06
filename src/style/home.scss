@@ -1,0 +1,33 @@
+.home-wrapper {
+
+    // .text {
+    //     color: red;
+    //     position: absolute;
+    // }
+    
+    .home-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: calc(100vh - 84px);
+
+        .home-text{
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+        
+        .img {
+            background-size: cover;
+            
+
+            // // background-image: url(../../static/assets/images/picture.jpg);
+            // background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            // min-height: 100%;
+            // height: 100vh;
+            // position: relative;
+          
+        }
+    }
+}
