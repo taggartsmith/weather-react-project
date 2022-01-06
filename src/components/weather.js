@@ -3,7 +3,7 @@ import DateTime from './datetime';
 
 
 const api = {
-  key: "3e02607a855783c3d83e6293bb2a60a5",
+//   key: "API KEY GOES HERE",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
