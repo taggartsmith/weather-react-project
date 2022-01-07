@@ -9,6 +9,7 @@ import {
 import Weathercall from './weathercall';
 import Home from './pages/home';
 import Header from './header/header';
+import Slider from './pages/slider';
 
 
 
@@ -21,7 +22,8 @@ export default class App extends Component {
           <Header/>
           <Switch>
             <Route exact path='/' component={Home}/>
-            <Route path='/Weather' component={Weathercall}/>
+            <Route path='/weather' component={Weathercall}/>
+            <Route path='/pictures' component={Slider}/>
           </Switch>
 
         </div>

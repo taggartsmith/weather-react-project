@@ -20,6 +20,13 @@ class Header extends Component {
                 </NavLink>
             </div>
 
+
+            <div className="nav-link-wrapper">
+                <NavLink exact to="/pictures" activeClassName="nav-link-active">
+                    Pictures
+                </NavLink>
+            </div>
+
             <div className="nav-link-wrapper">
                 <NavLink to="/weather" activeClassName="nav-link-active">
                     Weather

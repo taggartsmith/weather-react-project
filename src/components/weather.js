@@ -3,11 +3,11 @@ import DateTime from './datetime';
 
 
 const api = {
-//   key: "API KEY GOES HERE",
+  key: "",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
-function Weatherfunction() {
+function Weathercall() {
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
 
@@ -22,7 +22,6 @@ function Weatherfunction() {
         });
     }
   }
-
 
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'weather warm' : 'weather') : 'weather'}>
@@ -58,4 +57,4 @@ function Weatherfunction() {
   );
 }
 
-export default Weatherfunction;
+export default Weathercall;
