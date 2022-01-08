@@ -7,12 +7,7 @@ import { NavLink } from "react-router-dom";
 class Header extends Component {
   render() {
     return (
-      <div className='header'>
-          <div className='header-name'>
-            
-            
-          </div>
-          
+      <div className='header'>          
           <div className="header-links">
             <div className="nav-link-wrapper">
                 <NavLink exact to="/" activeClassName="nav-link-active">

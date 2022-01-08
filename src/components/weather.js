@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import DateTime from './datetime';
+import background from '../../static/assets/images/DJI_0388.jpg';
 
 
 const api = {
-  key: "",
+  key: "5e04edd6a745edeef639f11e05ac5a7f",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -24,10 +25,12 @@ function Weathercall() {
   }
 
   return (
-    <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'weather warm' : 'weather') : 'weather'}>
-      {/* <div className="date">
-        <DateTime></DateTime>
-      </div> */}
+    <div 
+        className="img"
+        style={{
+        backgroundImage: `url(${background})`
+      }}>
+
       <div className='page-content'>
         <div className="search-box">
           <input 
@@ -40,7 +43,7 @@ function Weathercall() {
           />
         </div>
         {(typeof weather.main != "undefined") ? (
-        <div>
+        <div className='items-returned'>
           <div className="location-box">
             <div className="location">{weather.name}, {weather.sys.country}</div>
           </div>

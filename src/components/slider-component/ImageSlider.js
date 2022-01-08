@@ -20,8 +20,8 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <section className='slider'>
-      <button icon='check-square' className='left-arrow' onClick={prevSlide}>Back</button>
-      <button icon='coffee' className='right-arrow' onClick={nextSlide}>Next</button>
+      <button className='left-arrow' onClick={prevSlide}>Back</button>
+      <button className='right-arrow' onClick={nextSlide}>Next</button>
       {SliderData.map((slide, index) => {
         return (
           <div
@@ -29,7 +29,7 @@ const ImageSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt='travel image' className='image' />
+              <img src={slide.image} alt='Image' className='image' />
             )}
           </div>
         );
