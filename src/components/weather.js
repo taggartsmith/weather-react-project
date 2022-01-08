@@ -25,10 +25,10 @@ function Weathercall() {
 
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'weather warm' : 'weather') : 'weather'}>
-      <div className="date">
+      {/* <div className="date">
         <DateTime></DateTime>
-      </div>
-      <main>
+      </div> */}
+      <div className='page-content'>
         <div className="search-box">
           <input 
             type="text"
@@ -52,7 +52,7 @@ function Weathercall() {
           </div>
         </div>
         ) : ('')}
-      </main>
+      </div>
     </div>
   );
 }
