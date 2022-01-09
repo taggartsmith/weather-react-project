@@ -36,7 +36,7 @@ function Weathercall() {
           <input 
             type="text"
             className="search-bar"
-            placeholder="City or State..."
+            placeholder="Search Weather by City..."
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
