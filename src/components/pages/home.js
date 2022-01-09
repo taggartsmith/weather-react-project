@@ -18,6 +18,7 @@ class Home extends Component {
                 <div className='home-text'>
                     Welcome to my Functioning Web Application!
                     <p>This is a Project made by Taggart Smith</p>
+                    
                 </div>
             </div>
 
